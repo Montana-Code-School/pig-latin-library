@@ -1,22 +1,29 @@
 This is a simple Javascript Pig Latin translator.
 
-- The Rules of Pig Latin -
+### Installation:
+$ npm i pig-latin-library
 
- for words that begin with consonant sounds, all letters before the initial
- vowel are placed at the end of the word sequence, then “ay” is added
+#### The Rules of Pig Latin:
 
- for words that start with a vowel, all you need to do is add “way”
- “ultimate” becomes “ultimateway”
+For words that begin with consonant sounds, all letters before the initial
+vowel are placed at the end of the word sequence, then “ay” is added.
 
- for words that begins with “y” is treated as a consonant word
- “yellow” becomes “ellowyay”
+For words that start with a vowel, all you need to do is add “way” and “ultimate” becomes “ultimateway”.
 
- capitalized word will also be capitalized after test is return
+For words that begins with “y” is treated as a consonant word “yellow” becomes “ellowyay”.
 
- punctuation is maintained
----
-to run the pig latin test file:
-  npm run test
+Capitalized words will also be capitalized after test is return.
 
-to run the pig latin file:
-  npm run start
+Singular punctuation is maintained at the beginning and end of a sentence.
+
+
+#### Example Usage:
+```
+const pigLatin = require("pig-latin-library");
+
+pigLatin('This is a pig latin library.');
+```
+#### Output:
+```
+Isthay isway away igpay atinlay ibrarylay.  
+```
